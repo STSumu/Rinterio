@@ -32,10 +32,10 @@
     }
   </script>
 </head>
-<body class="font-manrope text-black">
-    <header class="md:container mx-auto bg-gradient-to-b from-white/[100%] to-base-200">
-        <nav>
-            <div class="navbar bg-base-100">
+<body class="font-manrope text-black bg-base-200">
+    <header class=" bg-gradient-to-t from-white/[100%] to-base-200">
+        <nav class="md:container mx-auto">
+            <div class="navbar ">
                 <div class="navbar-start">
                   <a class="btn btn-ghost text-xl"><i class="rounded-full bg-button-bg -rotate-45 p-1 fa-solid fa-arrow-right"></i>Rinterio</a>
                 </div>
@@ -120,14 +120,14 @@
               </div>
         </nav>
         <!-- hero section  -->
-            <div class="hero  min-h-screen text-center">
+            <div class="hero  min-h-screen text-center md:container mx-auto">
                 <div class="hero-content flex-col">
                   <img
                     src="assets/banner.png"
                     class="" />
                   <div class="">
                     <h1 class="text-4xl text-[#212121] md:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
-                    <p class="py-6 font-medium w-5/6 mx-auto">
+                    <p class="py-6 font-medium w-5/6 mx-auto text-[#494949] text-sm md:text-base">
                         The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                     </p>
                     <button class="btn bg-button-bg/[0.5] rounded-[32px] py-3 px-6 font-bold text-xl">View Details<i class="rounded-full bg-button-bg -rotate-45 p-1 fa-solid fa-arrow-right"></i></button>
@@ -135,8 +135,55 @@
                 </div>
               </div>
     </header>
-    <main>
+    <main class="md:container mx-auto p-5">
+       <!-- About us section  -->
+       <section class="my-24">
+        <img src="assets/Vector.png" class="rotate-12 -ml-12 mb-4 hidden lg:flex" alt="">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-9">
+          <div class="space-y-6 my-auto ">
+           <div class="space-y-6 text-center lg:text-left">
+            <button class="btn bg-white rounded-[32px] text-[#494949]"><i class="fa-solid fa-arrow-right"></i>About us</button>
+            <h1 class="font-bold text-3xl md:text-4xl">We design thoughtful, liveable spaces</h1>
+            <p class="font-medium text-[#494949] text-sm md:text-base ">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+           </div>
+             <!-- cards -->
+              <div class="flex flex-col md:flex-row lg:flex-col gap-4 md:gap-6">
+                <!-- card 1  -->
+                <div class="card card-side bg-base-100 px-6">
+                  <figure>
+                    <img
+                      src="assets/commercial.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Commercial</h2>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+                <!-- card 2  -->
+                <div class="card card-side bg-base-100 px-6">
+                  <figure>
+                    <img
+                      src="assets/residential.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Residential</h2>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="flex ">
+            <img src="assets/Rectangle.png" class="w-full" alt="">
+          </div>
+        </div>
+       </section>
 
+       <section class="bg-white">
+
+       </section>
     </main>
     <footer>
 
