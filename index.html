@@ -38,6 +38,9 @@
               "gray-1": "#737373",
               "gray-2": "#494949",
             },
+            backgroundImage: {
+        'img-bg': "url('assets/bg.jpg')",
+      }
           },
         },
       };
@@ -176,9 +179,9 @@
         </div>
       </div>
     </header>
-    <main class="p-5">
+    <main class="">
       <!-- About us section  -->
-      <section class="my-24 md:container mx-auto">
+      <section class="my-24 md:container mx-auto p-5">
         <img
           src="assets/Vector.png"
           class="rotate-12 -ml-12 mb-4 hidden lg:flex"
@@ -235,8 +238,9 @@
         </div>
       </section>
       <!-- about us 2  -->
-      <section class="rounded-3xl bg-white md:container mx-auto p-8">
-        <div
+      <section class="p-5">
+        <div class="rounded-3xl bg-white md:container mx-auto p-8">
+          <div
           class="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           <!-- stat 1  -->
@@ -270,9 +274,10 @@
             <div class="stat-desc">Staff Members</div>
           </div>
         </div>
+        </div>
       </section>
       <!-- work section  -->
-      <section class="my-24 md:container mx-auto">
+      <section class="my-24 md:container mx-auto p-5">
         <div class="space-y-6 my-auto">
           <div class="space-y-6 text-center">
             <button class="btn bg-white rounded-[32px] text-[#494949]">
@@ -349,7 +354,7 @@
         </div>
       </section>
       <!-- portfolio section  -->
-      <section class="lg:bg-white py-24">
+      <section class="lg:bg-white py-24 p-5">
         <div class="md:container mx-auto">
           <!-- content div  -->
           <div class="space-y-6 text-center">
@@ -451,7 +456,7 @@
         </div>
       </section>
       <!-- news section  -->
-      <section class="my-24 md:container mx-auto">
+      <section class="my-24 md:container mx-auto p-5">
         <div class="space-y-6 text-center">
           <button class="btn bg-button-bg/[0.2] rounded-[32px] text-[#494949]">
             <i class="fa-solid fa-arrow-right"></i>Rinterio news
@@ -469,10 +474,10 @@
         <!-- cards  -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
           <!-- card 1  -->
-          <div class="p-4 md:p-6 bg-white rounded-2xl flex flex-col md:flex-row lg:flex-col">
+          <div class="p-4 md:p-6 bg-white rounded-2xl flex flex-col md:flex-row lg:flex-col gap-6">
             <img src="assets/article1.png" alt="" />
             <div class="space-y-4">
-              <div class="my-5 flex text-[#737373] font-medium">
+              <div class="flex text-[#737373] font-medium">
                 <p><i class="fa-regular fa-calendar"></i> July14, 2024</p>
                 <p><i class="fa-regular fa-circle-user"></i> By Admin</p>
               </div>
@@ -493,10 +498,10 @@
             </div>
           </div>
           <!-- card 2  -->
-          <div class="p-4 md:p-6 bg-white rounded-2xl flex flex-col md:flex-row lg:flex-col">
+          <div class="p-4 md:p-6 bg-white rounded-2xl flex flex-col md:flex-row lg:flex-col gap-6">
             <img src="assets/article2.png" alt="" />
             <div class="space-y-4">
-              <div class="my-5 flex text-[#737373] font-medium">
+              <div class="flex text-[#737373] font-medium">
                 <p><i class="fa-regular fa-calendar"></i> July14, 2024</p>
                 <p><i class="fa-regular fa-circle-user"></i> By Admin</p>
               </div>
@@ -517,10 +522,10 @@
             </div>
           </div>
           <!-- card 3  -->
-          <div class="p-4 md:p-6 bg-white rounded-2xl flex flex-col md:flex-row lg:flex-col">
+          <div class="p-4 md:p-6 bg-white rounded-2xl flex flex-col md:flex-row lg:flex-col gap-6">
             <img src="assets/article3.png" alt="" />
             <div class="space-y-4">
-              <div class="my-5 flex text-[#737373] font-medium">
+              <div class="flex text-[#737373] font-medium">
                 <p><i class="fa-regular fa-calendar"></i> July14, 2024</p>
                 <p><i class="fa-regular fa-circle-user"></i> By Admin</p>
               </div>
@@ -542,7 +547,39 @@
           </div>
         </div>
       </section>
-
+      <!-- discuss section  -->
+       <section class="bg-img-bg p-5 py-24">
+          <div class="md:container mx-auto">
+            <!-- content  -->
+            <div class="space-y-6 text-center">
+              <button class="btn bg-button-bg/[0.2] rounded-[32px] text-[#494949]">
+                <i class="fa-solid fa-arrow-right"></i>Let's connect
+              </button>
+              <h1 class="font-bold text-3xl md:text-4xl">
+                Let’s Discuss Next Project              </h1>
+              <p
+                class="font-medium text-[#494949] text-sm md:text-base max-w-2xl mx-auto"
+              >
+                The barn house captivates with its blend of rustic charm and modern
+                sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+            </div>
+            <form action="" class="grid grid-rows-6 grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 md:p-5">
+              <input type="text" name="" id="" placeholder="First name*" class="w-full rounded-[64px] p-5">
+              <input type="text" name="" id="" placeholder="Last name*" class="rounded-[64px] p-5">
+              <input type="number" name="" id="" placeholder="Phone number*" class="rounded-[64px] p-5">
+              <input type="email" name="" id="" placeholder="Email*" class="rounded-[64px] p-5">
+              <input type="text" name="" id="" placeholder="Write a message" class="rounded-[32px] p-5 md:col-span-2 row-span-3">
+              <div class="rounded-[64px] p-5 md:col-span-2 bg-button-bg text-center text-bold font-bold">
+                <input type="submit" name="" id="" value="Send mail" class="font-bold text-[#212121]"><i
+                class="ml-2 text-white bg-black rounded-full -rotate-45 p-1 fa-solid fa-arrow-right"
+              ></i>
+              </div>
+              
+            </form>
+            <div></div>
+          </div>
+       </section>
     </main>
     <footer></footer>
   </body>
